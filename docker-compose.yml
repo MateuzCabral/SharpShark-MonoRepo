@@ -1,0 +1,28 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    image: sharpshark-backend
+    container_name: sharpshark_backend
+    volumes:
+      - sharpshark_db:/app/db                      
+      - sharpshark_uploads:/app/uploads            
+      - ./captures:/data/ingest
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    image: sharpshark-frontend
+    container_name: sharpshark_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  sharpshark_db:
+    driver: local
+  sharpshark_uploads:
+    driver: local
