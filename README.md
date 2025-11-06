@@ -18,7 +18,7 @@ Desenvolver uma plataforma modular e extensível para **análise automatizada de
 ### Objetivos Específicos
 - Processar arquivos `.pcapng` e reconstruir fluxos de comunicação TCP.
 - Gerar estatísticas de IPs, portas e protocolos mais utilizados.
-- Detectar automaticamente padrões de ataques como **Port Scan**, **Brute Force**, e assinaturas customizadas (ex: SQLi, XSS).
+- Detectar automaticamente padrões de ataques como **Brute Force** e assinaturas customizadas (ex: SQLi, XSS).
 - Armazenar resultados em banco de dados SQLite.
 - Controlar o acesso ao sistema através de autenticação de usuários (JWT).
 - Exibir alertas e relatórios interativos via dashboard web (frontend React).
