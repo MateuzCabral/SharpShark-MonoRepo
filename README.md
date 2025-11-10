@@ -1,5 +1,6 @@
 # 🦈 SharpShark — Sistema de Análise de Tráfego e Segurança de Rede
 
+![icon](icon.jpeg)
 
 ## 📘 Descrição Geral
 O **SharpShark** é um sistema de análise de tráfego e segurança de rede projetado para automatizar a análise forense de arquivos de captura de pacotes (.pcapng).
